@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me Poupe! Know how invest and save money </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id = "left-display">
+        <div class = "left-on-top">Compound Interest Simulator</div>
+        <div class = group-1>
+            <div class="info">
+                <label for="info1">How much money do you have to invest today?</label>
+                R$<input type="number" name="info1" id="info1">
+            </div>
+            <div class="info">
+                <label for="info2">Monthly application</label>
+               R$<input type="number" name="info2" id="info2">
+            </div>
+            <div class="info">
+                <label for="info3">How long?</label>
+                <input type="number" name="info3" id="info3"> MESES
+            </div>
+        </div>
+        <div class="group2">
+            <div class="info rentability-div">
+                <label for="info4">Rentability</label>
+                <input type="number" name="info4" id="info4">%
+            </div>
+            <div class="info rentability-div">
+                <select name="rentability-select" id="rentability-camp">
+                    <option>Per month</option>
+                    <option>Per year</option>
+                </select>
+            </div>
+        </div>
+        <input type="button" value="Done" onclick = "done()">
+    </main>
+
+    <section id = "right-display">
+        <div class="firts-right">
+            How much can your money multiply and work for you?
+        </div>
+        <div class="second-right">
+            See how the interest on interest can turbocharge your investiments and contribute to your independence!
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

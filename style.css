@@ -1,0 +1,12 @@
+*{
+    margin: 4px;
+    padding: 0px;
+    text-decoration: none;
+}
+label{
+    display:block;
+}
+
+.rentability-div{
+    display: inline;
+}
