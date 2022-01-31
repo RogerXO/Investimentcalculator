@@ -3,10 +3,23 @@
     padding: 0px;
     text-decoration: none;
 }
+
 label{
     display: block;
 }
 
-.rentability-div{
+.info-rentability-div{
     display: inline;
+}
+
+#left-display{
+    display: block;
+}
+
+#first-left-display{
+    display: block;    
+}
+
+#second-left-display{
+    display: block;
 }
