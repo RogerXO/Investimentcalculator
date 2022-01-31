@@ -14,21 +14,27 @@
                 <div class = group-1>
                     <div class="info">
                         <label for="info1">How much money do you have to invest today?</label>
-                        <span>R$</span><input type="number" name="info1" id="info1">
+                        <div>
+                            <span>R$</span><input name="info1" id="info1" autofocus placeholder="0,00" data-mask="000.000.000.000.000.000,00" data-mask-selectonfocus="true">
+                        </div>
                     </div>
                     <div class="info">
                         <label for="info2">Monthly application</label>
-                        <span>R$</span><input type="number" name="info2" id="info2">
+                        <div>
+                            <span>R$</span><input name="info2" id="info2" placeholder="0,00" data-mask="000.000.000.000.000.000,00" data-mask-selectonfocus="true">
+                        </div>
                     </div>
                     <div class="info">
                         <label for="info3">How long?</label>
-                        <input type="number" name="info3" id="info3"><span>months</span>
+                        <div>
+                            <input type="number" name="info3" id="info3" placeholder="Type the number"><span>months</span>
+                        </div>
                     </div>
                 </div>
                 <div class="group2">
                     <div class="info-rentability-div">
                         <label for="info4">Rentability</label>
-                        <input type="number" name="info4" id="info4"><span>%</span>
+                        <input type="number" name="info4" id="info4" placeholder="Type the number"><span>%</span>
                     </div>
                     <div class="info-rentability-div">
                         <select name="rentability-select" id="rentability-camp">
@@ -72,7 +78,10 @@
             See how the interest on interest can turbocharge your investiments and contribute to your independence!
         </div>
     </section>
-
+    
+    <script src="vendor/simple-mask-money.js"></script>
     <script src="script.js"></script>
+
+    
 </body>
 </html>
