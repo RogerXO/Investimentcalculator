@@ -1,5 +1,10 @@
 /*
-2- transformar os resultados em escrita monetária
+testar localeString sem as variaveis
+
+
+1 - Sumir com a segunda tela da esquerda
+2 - fazer aparecer a segunda tela com o resultado e sumir a primeira
+3 - Configurar "redo silumation" button para aparecer a primeira tela e sumir a segunda
 */  
  
  // configuration
@@ -62,21 +67,15 @@ function done() {
   const i_yearly = (ic *(Math.pow((1+(year_to_month)), n))) + ((pmc *((Math.pow((1+(year_to_month)), n)) - 1))/(year_to_month))
   const interest_earned_month =  i_monthly - investedmoney
   const interest_earned_year = i_yearly - investedmoney
-  
-  let maskedinvestedmoney = investedmoney.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-  let maskedi_monthly = i_monthly.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-  let maskedi_yearly = i_yearly.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-  let masked_interest_earned_month = interest_earned_month.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
-  let masked_interest_earned_year = interest_earned_year.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
   if (selectvalue == "pmonth") {
-    investedmoneydiv.innerHTML = maskedinvestedmoney
-    interestearneddiv.innerHTML = masked_interest_earned_month
-    accumulatedtotalvalue.innerHTML = maskedi_monthly
+    investedmoneydiv.innerHTML = investedmoney.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    interestearneddiv.innerHTML = interest_earned_month.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    accumulatedtotalvalue.innerHTML = i_monthly.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   }
   if (selectvalue == "pyear") {
-    investedmoneydiv.innerHTML = maskedinvestedmoney
-    interestearneddiv.innerHTML = masked_interest_earned_year
-    accumulatedtotalvalue.innerHTML = maskedi_yearly
+    investedmoneydiv.innerHTML = investedmoney.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    interestearneddiv.innerHTML = interest_earned_year.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+    accumulatedtotalvalue.innerHTML = i_yearly.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   }
 }
