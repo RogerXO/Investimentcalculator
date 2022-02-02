@@ -1,14 +1,8 @@
 /*
-testar localeString sem as variaveis
-
-
-1 - Sumir com a segunda tela da esquerda
-2 - fazer aparecer a segunda tela com o resultado e sumir a primeira
-3 - Configurar "redo silumation" button para aparecer a primeira tela e sumir a segunda
 */  
  
- // configuration
- const args = {
+// configuration
+const args = {
     afterFormat(e) { console.log('afterFormat', e); },
     allowNegative: false,
     beforeFormat(e) { console.log('beforeFormat', e); },
@@ -20,25 +14,15 @@ testar localeString sem as variaveis
     decimalSeparator: ',',
     thousandsSeparator: '.',
     cursor: 'move'
-  };
+};
 
-  // Select the element
-  const input1 = SimpleMaskMoney.setMask('#info1', args);
-  // Convert the input value to a number, which you can save e.g. to a database:
-  input1.formatToNumber();
+// Select the element
+const input1 = SimpleMaskMoney.setMask('#info1', args);
+// Convert the input value to a number, which you can save e.g. to a database:
+input1.formatToNumber();
 
-  const input2 = SimpleMaskMoney.setMask('#info2', args);
-  input2.formatToNumber();
-
-/*
-M = Montante
-ic = Initial Capital
-i = interest/100
-n = time
-PMC = per month contributions
-
-M = (ic *((1+i)^n)) + ((pmc * (((1+i)^n) - 1))/i)
-*/
+const input2 = SimpleMaskMoney.setMask('#info2', args);
+input2.formatToNumber();
 
 let ninfo1 = document.getElementById('info1')
 let ninfo2 = document.getElementById('info2')
@@ -78,4 +62,12 @@ function done() {
     interestearneddiv.innerHTML = interest_earned_year.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
     accumulatedtotalvalue.innerHTML = i_yearly.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
   }
+  
+  document.querySelector("div#first-left-display").style.display = "none";
+  document.querySelector("div#second-left-display").style.display = "block";
+}
+
+function redo() {
+  document.querySelector("div#first-left-display").style.display = "block";
+  document.querySelector("div#second-left-display").style.display = "none";
 }
