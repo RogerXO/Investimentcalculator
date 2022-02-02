@@ -38,8 +38,8 @@
                     </div>
                     <div class="info-rentability-div">
                         <select name="rentability-select" id="rentability-camp">
-                            <option class = "rentability-m">Per month</option>
-                            <option class = "rentability-y" >Per year</option>
+                            <option value = "pmonth" class = "rentability-m">Per month</option>
+                            <option value = "pyear" class = "rentability-y" >Per year</option>
                         </select>
                     </div>
                 </div>
@@ -49,23 +49,32 @@
         <div id="second-left-display">
             <div class = "top-message">
                 <strong>Now that you've seen that the interest can make you rich,</strong>
+                <p>It's time to let them into your life and do your money work for you</p>
             </div>
-            <p>It's time to let them into your life and do your money work for you</p>
-            <div class = "investiment-result">
-                <strong>Invested Money</strong>
-                <div class="investment-result-value">
+
+
+            <div class="investiment-result-div">
+                <div class = "investiment-result">
+                    <p><strong>Invested Money</strong></p>
+                    <div class="investment-result-value invested-money">
+                        #result
+                    </div>
+                </div>
+                <div class = "investiment-result result2">
+                    <p><strong>Interest earned in the period</strong></p>
+                    <div class="investment-result-value interest-earned">
+                        #result
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-result-value-div">
+                <p><strong>Accumulated Total</strong></p>
+                <div class = "accumulated-total-value">
                     #result
                 </div>
             </div>
-            <div class = "investiment-result">
-                <strong>Interest earned in the period</strong>
-                <div class="investment-result-value">
-                    #result
-                </div>
-                <div class="result-value-box-full">
-                    
-                </div>
-            </div>
+            
             <button type="reset" onclick = "redo()">Redo simulation</button>
         </div>
     </main>
