@@ -1,4 +1,5 @@
 /*
+1- configurar o CSS
 */  
  
 // configuration

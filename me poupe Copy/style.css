@@ -1,15 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
-    margin: 4px;
+    margin: 0px;
     padding: 0px;
     text-decoration: none;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+select{
+    font-family: 'Poppins', sans-serif;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+}
+
+.left-on-top{
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    color: #561dba;
+
+}
+
 label{
     display: block;
+    color: rgb(117, 115, 115);
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#full-display{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info{
+    font-size: 16px;
 }
 
 .info-rentability-div{
     display: inline;
+    font-size: 16px;
 }
 
 #left-display{
@@ -22,4 +59,29 @@ label{
 
 #second-left-display{
     display: none;
+}
+
+section#right-display{
+    background: linear-gradient(to right, #541d9c, #7c3ece 50%, #6222bb);
+    background-image: url("images/backgroundcoin.png");
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 35px;
+}
+
+div.first-right{
+    font-size: 22px;
+    color: white;
+    width: 40%;
+    text-align: center;
+    align-self: end;
+}
+
+div.second-right{
+    font-size: 16px;
+    color: white;
+    width: 40%;
+    align-self: start;
+    text-align: center;
 }

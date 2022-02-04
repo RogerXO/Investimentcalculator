@@ -8,86 +8,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main id = "left-display">
-        <div id = "first-left-display">
-            <div class = "left-on-top">Compound Interest Simulator</div>
-                <div class = group-1>
-                    <div class="info">
-                        <label for="info1">How much money do you have to invest today?</label>
-                        <div>
-                            <span>R$</span><input name="info1" id="info1" autofocus placeholder="0,00" data-mask="000.000.000.000.000.000,00" data-mask-selectonfocus="true">
+    <div id="full-display">
+        <main id = "left-display">
+            <div id = "first-left-display">
+                <div class = "left-on-top">Compound Interest Simulator</div>
+                    <div class = group-1>
+                        <div class="info">
+                            <label for="info1">How much money do you have to invest today?</label>
+                            <div>
+                                <span>R$</span><input name="info1" id="info1" autofocus>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <label for="info2">Monthly application</label>
+                            <div>
+                                <span>R$</span><input name="info2" id="info2">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <label for="info3">How long?</label>
+                            <div>
+                                <input type="number" name="info3" id="info3" placeholder="Type the number"><span>months</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="info">
-                        <label for="info2">Monthly application</label>
-                        <div>
-                            <span>R$</span><input name="info2" id="info2" placeholder="0,00" data-mask="000.000.000.000.000.000,00" data-mask-selectonfocus="true">
+                    <div class="group2">
+                        <div class="info-rentability-div">
+                            <label for="info4">Rentability</label>
+                            <input type="number" name="info4" id="info4" placeholder="Type the number"><span>%</span>
+                        </div>
+                        <div class="info-rentability-div">
+                            <select name="rentability-select" id="rentability-camp">
+                                <option value = "pmonth" class = "rentability-m">Per month</option>
+                                <option value = "pyear" class = "rentability-y" >Per year</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="info">
-                        <label for="info3">How long?</label>
-                        <div>
-                            <input type="number" name="info3" id="info3" placeholder="Type the number"><span>months</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="group2">
-                    <div class="info-rentability-div">
-                        <label for="info4">Rentability</label>
-                        <input type="number" name="info4" id="info4" placeholder="Type the number"><span>%</span>
-                    </div>
-                    <div class="info-rentability-div">
-                        <select name="rentability-select" id="rentability-camp">
-                            <option value = "pmonth" class = "rentability-m">Per month</option>
-                            <option value = "pyear" class = "rentability-y" >Per year</option>
-                        </select>
-                    </div>
-                </div>
-                <input type="button" value="Done" onclick = "done()">
-        </div>
-        
-        <div id="second-left-display">
-            <div class = "top-message">
-                <strong>Now that you've seen that the interest can make you rich,</strong>
-                <p>It's time to let them into your life and do your money work for you</p>
-            </div>
-
-
-            <div class="investiment-result-div">
-                <div class = "investiment-result">
-                    <p><strong>Invested Money</strong></p>
-                    <div class="investment-result-value invested-money">
-                        #result
-                    </div>
-                </div>
-                <div class = "investiment-result result2">
-                    <p><strong>Interest earned in the period</strong></p>
-                    <div class="investment-result-value interest-earned">
-                        #result
-                    </div>
-                </div>
-            </div>
-
-            <div class="full-result-value-div">
-                <p><strong>Accumulated Total</strong></p>
-                <div class = "accumulated-total-value">
-                    #result
-                </div>
+                    <input type="button" value="Done" onclick = "done()">
             </div>
             
-            <button type="reset" onclick = "redo()">Redo simulation</button>
-        </div>
-    </main>
+            <div id="second-left-display">
+                <div class = "top-message">
+                    <strong>Now that you've seen that the interest can make you rich,</strong>
+                    <p>It's time to let them into your life and do your money work for you</p>
+                </div>
 
-    <section id = "right-display">
-        <div class="firts-right">
-            How much can your money multiply and work for you?
-        </div>
-        <div class="second-right">
-            See how the interest on interest can turbocharge your investiments and contribute to your independence!
-        </div>
-    </section>
-    
+
+                <div class="investiment-result-div">
+                    <div class = "investiment-result">
+                        <p><strong>Invested Money</strong></p>
+                        <div class="investment-result-value invested-money">
+                            #result
+                        </div>
+                    </div>
+                    <div class = "investiment-result result2">
+                        <p><strong>Interest earned in the period</strong></p>
+                        <div class="investment-result-value interest-earned">
+                            #result
+                        </div>
+                    </div>
+                </div>
+
+                <div class="full-result-value-div">
+                    <p><strong>Accumulated Total</strong></p>
+                    <div class = "accumulated-total-value">
+                        #result
+                    </div>
+                </div>
+                
+                <button type="reset" onclick = "redo()">Redo simulation</button>
+            </div>
+        </main>
+
+        <section id = "right-display">
+            <div class="first-right">
+                How much can your money multiply and work for you?
+            </div>
+            <div class="second-right">
+                See how the interest on interest can turbocharge your investiments and contribute to your independence!
+            </div>
+        </section>
+    </div>
     <script src="vendor/simple-mask-money.js"></script>
     <script src="script.js"></script>
 
