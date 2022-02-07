@@ -1,7 +1,12 @@
 /*
-- preparar a segunda tela da esquerda
+1°ª tela
 - Corrigir o tamanho dos spans
 - Corrigir o tamanho dos inputs para ocupar mais a tela
+
+2ª tela
+- deixar os 2 primeiros resultados do mesmo tamanho
+
+- Quando usa o botão, a outra tela vem desorganizada
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -165,7 +170,7 @@ div{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 45px;
     /*flex-start, flex-end, center, stretch, space-around, space-between*/
 }
 
@@ -194,8 +199,16 @@ p{
     color: #561dba;
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 20px;
-    text-align: center;
+    padding: 30px 50px;
+}
+
+.investiment-result-div{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-around;
 }
 
 .accumulated-total-value{
@@ -203,7 +216,7 @@ p{
     color: white;
     background-color: #561DBA;
     border-radius: 15px;
-    padding: 15px 200px;
+    padding: 30px 300px;
     text-align: center;
 }
 
@@ -215,6 +228,23 @@ p{
     text-align: center;
 }
 
+#redo-button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    padding: 5px 5px;
+    border: 1px solid transparent;
+    color: #561dba;
+    background-color: #ffbd0a;
+    border-radius: 15px;
+    margin: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#redo-button:hover{
+    background-color: #f5cb59;
+}
+
 section#right-display{
     background: linear-gradient(to right, #541d9c, #7c3ece 50%, #6222bb);
     background-image: url("images/backgroundcoin.png");
@@ -222,19 +252,6 @@ section#right-display{
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     grid-gap: 35px;
-}
-
-#redo-button{
-font-family: 'Poppins', sans-serif;
-font-size: 1.6em;
-padding: 5px 5px;
-border: 1px solid transparent;
-color: #561dba;
-background-color: #ffbd0a;
-border-radius: 15px;
-margin: auto;
-font-weight: bold;
-text-transform: uppercase;
 }
 
 
