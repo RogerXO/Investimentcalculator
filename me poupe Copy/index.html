@@ -12,39 +12,31 @@
         <main id = "left-display">
             <div id = "first-left-display">
                 <div class = "left-on-top">Compound Interest Simulator</div>
-                    <div class = group-1>
-                        <div class="info">
-                            <label for="info1">How much money do you have to invest today?</label>
-                            <div>
-                                <span>R$</span><input name="info1" id="info1" autofocus>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <label for="info2">Monthly application</label>
-                            <div>
-                                <span>R$</span><input name="info2" id="info2">
-                            </div>
-                        </div>
-                        <div class="info">
-                            <label for="info3">How long?</label>
-                            <div>
-                                <input type="number" name="info3" id="info3" placeholder="Type the number"><span>months</span>
-                            </div>
-                        </div>
+                <div class="info">
+                    <label for="info1">How much money do you have to invest today?</label>
+                    <span>R$</span><input name="info1" id="info1" class="firstinputs" autofocus>
+                </div>
+                <div class="info">
+                        <label for="info2">Monthly application</label>
+                        <span>R$</span><input name="info2" id="info2" class="firstinputs">
+                </div>
+                <div class="info">
+                        <label for="info3">How long?</label>
+                        <input type="number" name="info3" id="info3" class="lastsinputs" placeholder="Type the number"><span class = "spanright">months</span>
+                </div>
+                <div class="rentability-group">
+                    <div class="info-rentability-div">
+                        <label for="info4">Rentability</label>
+                        <input type="number" name="info4" id="info4" class="lastsinputs" placeholder="Type the number"><span class = "spanright">%</span>
                     </div>
-                    <div class="group2">
-                        <div class="info-rentability-div">
-                            <label for="info4">Rentability</label>
-                            <input type="number" name="info4" id="info4" placeholder="Type the number"><span>%</span>
-                        </div>
-                        <div class="info-rentability-div">
-                            <select name="rentability-select" id="rentability-camp">
-                                <option value = "pmonth" class = "rentability-m">Per month</option>
-                                <option value = "pyear" class = "rentability-y" >Per year</option>
-                            </select>
-                        </div>
+                    <div class="info-rentability-div">
+                        <select name="rentability-select" id="rentability-camp">
+                            <option value = "pmonth" class = "rentability-m">Per month</option>
+                            <option value = "pyear" class = "rentability-y" >Per year</option>
+                        </select>
                     </div>
-                    <input type="button" value="Done" onclick = "done()">
+                </div>
+                <button onclick = "done()">Done</button>
             </div>
             
             <div id="second-left-display">

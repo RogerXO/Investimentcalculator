@@ -11,17 +11,78 @@ body{
 
 select{
     font-family: 'Poppins', sans-serif;
+    color: #561dba;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+::placeholder{
+    color: #561dba;
 }
 
 span{
     font-family: 'Poppins', sans-serif;
+    color: #561dba;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    margin: 0;
+    padding: 0;
+    margin-right: -1px;
+    box-sizing: border-box;
 }
 
-.left-on-top{
+.spanright{
     font-family: 'Poppins', sans-serif;
-    font-size: 42px;
     color: #561dba;
+    margin-left: -1px;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    box-sizing: border-box;
+}
 
+.firstinputs{
+    color: #561dba;
+    margin-left: -1px;
+    min-width: 0;
+    font-size: 1em;
+    padding: 13px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: transparent;
+    outline: 0;
+}
+
+.lastsinputs{
+    color: #561dba;
+    margin-right: -1px;
+    min-width: 0;
+    font-size: 1em;
+    padding: 13px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-color: transparent;
+    outline: 0;
 }
 
 label{
@@ -31,17 +92,27 @@ label{
 
 button{
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1.6em;
+    padding: 10px 16px;
+    margin-right: 100px;
+    border: 1px solid transparent;
+    color: #561dba;
+    background-color: #ffbd0a;
+    border-radius: 15px;
+    margin-left: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+button:hover{
+    background-color: #f5cb59;
 }
 
 #full-display{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-
-.info{
-    font-size: 16px;
 }
 
 .info-rentability-div{
@@ -54,7 +125,32 @@ button{
 }
 
 #first-left-display{
-    display: block;    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: stretch;
+    gap: 20px 10px;
+}
+
+div{
+    border-radius: 68px;
+}
+
+.left-on-top{
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    color: #561dba;
+    margin: 20px auto 10px auto;
+}
+
+.info{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.group1 .group2{
+    margin: 100px;
 }
 
 #second-left-display{
