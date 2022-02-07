@@ -1,7 +1,3 @@
-/*
-1- configurar o CSS
-*/  
- 
 // configuration
 const args = {
     afterFormat(e) { console.log('afterFormat', e); },

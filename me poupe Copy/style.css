@@ -1,3 +1,9 @@
+/*
+- preparar a segunda tela da esquerda
+- Corrigir o tamanho dos spans
+- Corrigir o tamanho dos inputs para ocupar mais a tela
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0px;
@@ -125,7 +131,7 @@ button:hover{
 }
 
 #first-left-display{
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
@@ -154,7 +160,59 @@ div{
 }
 
 #second-left-display{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /*flex-start, flex-end, center, stretch, space-around, space-between*/
+}
+
+.top-first-message{
+    color: #561dba;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.top-second-message{
+    color: rgb(117, 115, 115);
+    font-size: 1.1em;
+}
+
+.top-message > strong{
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+p{
+    color: #777777;
+}
+
+.investment-result-value{
+    border: 2px solid #f2f2f2;
+    color: #561dba;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.accumulated-total-value{
+    border: 2px solid #f2f2f2;
+    color: white;
+    background-color: #561DBA;
+    border-radius: 15px;
+    padding: 15px 200px;
+    text-align: center;
+}
+
+.full-result-value-div{
+    text-align: center;
+}
+
+.investiment-result-div{
+    text-align: center;
 }
 
 section#right-display{
@@ -165,6 +223,20 @@ section#right-display{
     justify-items: center;
     grid-gap: 35px;
 }
+
+#redo-button{
+font-family: 'Poppins', sans-serif;
+font-size: 1.6em;
+padding: 5px 5px;
+border: 1px solid transparent;
+color: #561dba;
+background-color: #ffbd0a;
+border-radius: 15px;
+margin: auto;
+font-weight: bold;
+text-transform: uppercase;
+}
+
 
 div.first-right{
     font-size: 22px;
