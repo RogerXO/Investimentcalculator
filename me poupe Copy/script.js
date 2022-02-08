@@ -61,10 +61,10 @@ function done() {
   }
   
   document.querySelector("div#first-left-display").style.display = "none";
-  document.querySelector("div#second-left-display").style.display = "block";
+  document.querySelector("div#second-left-display").style.display = "flex";
 }
 
 function redo() {
-  document.querySelector("div#first-left-display").style.display = "block";
+  document.querySelector("div#first-left-display").style.display = "flex";
   document.querySelector("div#second-left-display").style.display = "none";
 }

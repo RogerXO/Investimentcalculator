@@ -5,8 +5,6 @@
 
 2ª tela
 - deixar os 2 primeiros resultados do mesmo tamanho
-
-- Quando usa o botão, a outra tela vem desorganizada
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -136,7 +134,7 @@ button:hover{
 }
 
 #first-left-display{
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
@@ -161,7 +159,7 @@ div{
 }
 
 #second-left-display{
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -188,7 +186,7 @@ div{
     font-weight: 900;
 }
 
-p{
+strong{
     color: #777777;
 }
 
@@ -203,6 +201,9 @@ p{
 }
 
 .investiment-result{
+    display: inline;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .investment-result-value{
