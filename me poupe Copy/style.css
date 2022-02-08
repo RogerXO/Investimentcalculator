@@ -160,10 +160,6 @@ div{
     margin-bottom: 40px;
 }
 
-.group1 .group2{
-    margin: 100px;
-}
-
 #second-left-display{
     display: flex;
     flex-direction: column;
@@ -183,6 +179,8 @@ div{
 .top-second-message{
     color: rgb(117, 115, 115);
     font-size: 1.1em;
+    margin-top: -25px;
+    margin-bottom: 30px;
 }
 
 .top-message > strong{
@@ -194,21 +192,25 @@ p{
     color: #777777;
 }
 
+.investiment-result-div{
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.investiment-result{
+}
+
 .investment-result-value{
     border: 2px solid #f2f2f2;
     color: #561dba;
     background-color: #F2F2F2;
     border-radius: 15px;
-    padding: 30px 50px;
-}
-
-.investiment-result-div{
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    align-content: stretch;
-    align-items: stretch;
-    justify-content: space-around;
+    padding: 40px 50px;
 }
 
 .accumulated-total-value{
@@ -216,15 +218,11 @@ p{
     color: white;
     background-color: #561DBA;
     border-radius: 15px;
-    padding: 30px 300px;
+    padding: 40px 290px;
     text-align: center;
 }
 
 .full-result-value-div{
-    text-align: center;
-}
-
-.investiment-result-div{
     text-align: center;
 }
 
