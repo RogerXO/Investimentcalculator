@@ -35,6 +35,7 @@ select{
 }
 
 span{
+    display: inline-block;
     font-family: 'Poppins', sans-serif;
     color: #561dba;
     font-size: 1em;
@@ -46,12 +47,15 @@ span{
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 15px;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     margin-right: -1px;
     box-sizing: border-box;
+    height: 100%;
+    width: 40px;
 }
 
 .spanright{
+    display: inline-block;
     font-family: 'Poppins', sans-serif;
     color: #561dba;
     margin-left: -1px;
@@ -64,6 +68,8 @@ span{
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 0px;
     box-sizing: border-box;
+    height: 100%;
+    width: 100px;
 }
 
 .firstinputs{
