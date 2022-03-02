@@ -13,6 +13,10 @@ body{
     color: #561dba;
 }
 
+hr {
+    margin: 30px 0 15px;
+}
+
 span{
     font-family: 'Poppins', sans-serif;
     color: #561dba;
