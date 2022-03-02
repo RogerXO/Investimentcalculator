@@ -1,1 +1,286 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";*{margin:0;padding:0;text-decoration:none}body{font-family:'Poppins',sans-serif}::placeholder{color:#561dba}span{font-family:'Poppins',sans-serif;color:#561dba;font-size:1em;text-align:center;border:2px solid #f2f2f2;background-color:#f2f2f2;border-top-left-radius:15px;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:15px;margin:0;padding:10px;margin-right:-1px;box-sizing:border-box}.spanright{font-family:'Poppins',sans-serif;color:#561dba;margin-left:-1px;font-size:1em;text-align:center;border:2px solid #f2f2f2;background-color:#f2f2f2;border-top-left-radius:0;border-top-right-radius:15px;border-bottom-right-radius:15px;border-bottom-left-radius:0;box-sizing:border-box}.firstinputs{color:#561dba;margin-left:-1px;min-width:0;font-size:1em;padding:13px 10px;border:2px solid #f2f2f2;border-radius:15px;border-top-left-radius:0;border-bottom-left-radius:0;border-left-color:transparent;outline:0;width:80%}.penultinput{color:#561dba;margin-right:-1px;margin-left:-5px;min-width:0;font-size:1em;padding:13px 10px;border:2px solid #f2f2f2;border-radius:15px;border-top-right-radius:0;border-bottom-right-radius:0;border-right-color:transparent;outline:0;width:75%}.lastinput{color:#561dba;margin-right:-1px;margin-left:-5px;min-width:220px;max-width:250px;font-size:1em;padding:13px 10px;border:2px solid #f2f2f2;border-radius:15px;border-top-right-radius:0;border-bottom-right-radius:0;border-right-color:transparent;outline:0}select{font-family:'Poppins',sans-serif;color:#561dba;min-width:275px;margin-left:20px;font-size:1em;text-align:start;border:2px solid #f2f2f2;background-color:#fff;border-radius:15px;padding:13px 10px}.info-rentability-div{display:inline;font-size:16px}label{display:block;color:#757373}#done-button{font-family:'Poppins',sans-serif;font-size:1em;padding:10px 40px;margin-right:100px;border:1px solid transparent;color:#561dba;background-color:#ffbd0a;border-radius:15px;margin-left:auto;font-weight:900;text-transform:uppercase}button:hover{background-color:#f5cb59}#full-display{height:100vh;display:grid;grid-template-columns:repeat(2,1fr)}#left-display{display:block;overflow-y:scroll;padding-bottom:100px}#first-left-display{display:flex;flex-direction:column;flex-wrap:wrap;align-content:space-around;align-items:stretch;gap:20px 10px}.left-on-top{font-family:'Poppins',sans-serif;font-size:42px;color:#561dba;margin:20px auto 10px}.info{font-size:16px;margin-bottom:40px}#second-left-display{display:none;flex-direction:column;flex-wrap:wrap;align-items:center;justify-content:center;gap:45px}.top-first-message{color:#561dba;font-size:1.3em;font-weight:900}.top-second-message{color:#757373;font-size:1.1em;margin-top:-25px;margin-bottom:30px}.top-message > strong{font-size:1.6em;font-weight:900}strong{color:#777}.investiment-result-div{display:flex;flex-direction:row;gap:100px;align-content:stretch;align-items:stretch;justify-content:space-around;text-align:center}.investiment-result{display:inline;box-sizing:border-box;text-align:center}.investment-result-value{border:2px solid #f2f2f2;color:#561dba;background-color:#F2F2F2;border-radius:15px;padding:40px 70px;width:100px;font-weight:900;font-size:1.2em}.accumulated-total-value{border:2px solid #f2f2f2;color:#fff;background-color:#561DBA;border-radius:15px;padding:40px 240px;text-align:center;font-weight:900;font-size:1.3em}.full-result-value-div{text-align:center}#redo-button{font-family:'Poppins',sans-serif;font-size:1em;padding:12px 50px;border:1px solid transparent;color:#561dba;background-color:#ffbd0a;border-radius:15px;margin:auto;font-weight:700;text-transform:uppercase}#redo-button:hover{background-color:#f5cb59}section#right-display{background:linear-gradient(to right,#541d9c,#7c3ece 50%,#6222bb);background-image:url(images/backgroundcoin.png);display:grid;grid-template-rows:1fr 1fr;justify-items:center;grid-gap:35px}div.first-right{font-size:22px;color:#fff;width:40%;text-align:center;align-self:end}div.second-right{font-size:16px;color:#fff;width:40%;align-self:start;text-align:center}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+::placeholder{
+    color: #561dba;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    color: #561dba;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    margin: 0;
+    padding: 10px;
+    margin-right: -1px;
+    box-sizing: border-box;
+}
+
+.spanright{
+    font-family: 'Poppins', sans-serif;
+    color: #561dba;
+    margin-left: -1px;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    box-sizing: border-box;
+}
+
+.firstinputs{
+    color: #561dba;
+    margin-left: -1px;
+    min-width: 0;
+    font-size: 1em;
+    padding: 13px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-color: transparent;
+    outline: 0;
+    width: 80%;
+}
+
+.penultinput{
+    color: #561dba;
+    margin-right: -1px;
+    margin-left: -5px;
+    min-width: 0;
+    font-size: 1em;
+    padding: 13px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-color: transparent;
+    outline: 0;
+    width: 75%;
+}
+
+.lastinput{
+    color: #561dba;
+    margin-right: -1px;
+    margin-left: -5px;
+    min-width: 220px;
+    max-width: 250px;
+    font-size: 1em;
+    padding: 13px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-color: transparent;
+    outline: 0;
+}
+
+select{
+    font-family: 'Poppins', sans-serif;
+    color: #561dba;
+    min-width: 275px;
+    margin-left: 20px;
+    font-size: 1em;
+    text-align: start;
+    border: 2px solid #f2f2f2;
+    background-color: white;
+    border-radius: 15px;
+    padding: 13px 10px;
+}
+
+.info-rentability-div{
+    display: inline;
+    font-size: 16px;
+}
+
+label{
+    display: block;
+    color: rgb(117, 115, 115);
+}
+
+#done-button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    padding: 10px 40px;
+    margin-right: 100px;
+    border: 1px solid transparent;
+    color: #561dba;
+    background-color: #ffbd0a;
+    border-radius: 15px;
+    margin-left: auto;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+button:hover{
+    background-color: #f5cb59;
+}
+
+#full-display{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+#left-display{
+    display: block;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+
+#first-left-display{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: stretch;
+    gap: 20px 10px;
+}
+
+.left-on-top{
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    color: #561dba;
+    margin: 20px auto 10px auto;
+}
+
+.info{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#second-left-display{
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    /*flex-start, flex-end, center, stretch, space-around, space-between*/
+}
+
+.top-first-message{
+    color: #561dba;
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.top-second-message{
+    color: rgb(117, 115, 115);
+    font-size: 1.1em;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+
+.top-message > strong{
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+strong{
+    color: #777777;
+}
+
+.investiment-result-div{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.investiment-result{
+    display: inline;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.investment-result-value{
+    border: 2px solid #f2f2f2;
+    color: #561dba;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    padding: 40px 70px;
+    width: 100px;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.accumulated-total-value{
+    border: 2px solid #f2f2f2;
+    color: white;
+    background-color: #561DBA;
+    border-radius: 15px;
+    padding: 40px 240px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.full-result-value-div{
+    text-align: center;
+}
+
+#redo-button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    padding: 12px 50px;
+    border: 1px solid transparent;
+    color: #561dba;
+    background-color: #ffbd0a;
+    border-radius: 15px;
+    margin: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#redo-button:hover{
+    background-color: #f5cb59;
+}
+
+section#right-display{
+    background: linear-gradient(to right, #541d9c, #7c3ece 50%, #6222bb);
+    background-image: url("images/backgroundcoin.png");
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-gap: 35px;
+}
+
+
+div.first-right{
+    font-size: 22px;
+    color: white;
+    width: 40%;
+    text-align: center;
+    align-self: end;
+}
+
+div.second-right{
+    font-size: 16px;
+    color: white;
+    width: 40%;
+    align-self: start;
+    text-align: center;
+}
